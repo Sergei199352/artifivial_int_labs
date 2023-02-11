@@ -1,5 +1,5 @@
 import sys
-sys.path.append("D:/artifivial_int_labs/Lab_3/cm3038-python-lab03/Python")
+sys.path.append("C:/Users/sergey stanislavchuk/artifivial_int_labs/Lab_3/cm3038-python-lab03/Python")
 
 import aips.search as search
 
