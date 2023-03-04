@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"aips.search","l":"Action"},{"p":"aips.search","l":"ActionStatePair"},{"l":"All Classes","u":"allclasses-index.html"},{"p":"aips.search","l":"Node"},{"p":"aips.search","l":"Path"},{"p":"aips.search","l":"SearchProblem"},{"p":"aips.search","l":"State"}];updateSearchResults();
