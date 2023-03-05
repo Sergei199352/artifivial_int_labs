@@ -1,5 +1,6 @@
-package aips.lab03.sq8;
+package aips.lab03.sq8solution;
 
+import aips.lab03.sq8solution.Sq8State;
 import aips.search.*;
 
 public class RunSq8

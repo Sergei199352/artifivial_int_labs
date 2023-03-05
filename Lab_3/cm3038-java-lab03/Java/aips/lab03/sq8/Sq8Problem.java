@@ -26,13 +26,14 @@ public class Sq8Problem extends SearchProblem {
  */
 public boolean isGoal(State state)
 {
+	return state.equals(this.goalState);
 //
 // *** Check if the given state is a goal state.
 // *** Hint: Check to see if the given state is a goal.
 // *** The goal state is in the "goalState" attribute of the current Sq8Problem object.
 //
-	System.out.println("*** Complete isGoal(...) method in Sq8Problem class.");
-	return false;	//***This is a dummy return statement to make the compile happy.
+	//System.out.println("*** Complete isGoal(...) method in Sq8Problem class.");
+	//return false;	//***This is a dummy return statement to make the compile happy.
 					//***Remove this when you have filled in the correct code.
 } //end method
 } //end class
