@@ -11,6 +11,7 @@ import aips.search.*;
  */
 public class McProblem extends SearchProblem
 {
+	
 	/**
 	 * The raft size defined as a class-level constant in the class.
 	 */
