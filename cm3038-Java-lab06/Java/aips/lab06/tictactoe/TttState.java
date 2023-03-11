@@ -69,13 +69,24 @@ for (int y=0;y<this.board.length;y++)			//scan through the rows
 	{
 	for (int x=0;x<this.board[y].length;x++)	//scan through the columns in a row
 		{
+			if(this.board[y][x] == Symbol.CROSS){
+				result+="|X";
+			} 
+			if (this.board[y][x] == Symbol.NAUGHT){
+				result+="|O";
+			}
+			if (this.board[y][x]==Symbol.BLANK){
+				result += "| ";
+			}
+			
+			
 		//
 		//*** Complete the toString() method here!!!
 		//*** The space on the board contains a Symbol. 
 		//*** Depending on its value, append an "X", "O" or "." to result.
 		//*** See the Symbol enumeration type for the different possible values.
 		//
-		System.out.println("Complete toString() method of TttState.");	//<--Replace this with your code.
+		//System.out.println("Complete toString() method of TttState.");	//<--Replace this with your code.
 		} //end for
 	result+="\n";								//add newline at end of each row
 	}
@@ -95,7 +106,16 @@ TttState nextState=(TttState)this.clone();							//new state as a clone of the c
 //*** Complete the method here!!!
 //*** Based on the action, put the correct symbol into the new state.
 //
-System.out.println("Complete applyAction(...) method in TttState.");	//<--Replace this with your code.
+int x = tttAction.x;
+int y = tttAction.y;
+
+if (tttAction.symbol == Symbol.CROSS){
+	nextState.board[y][x]=Symbol.CROSS;
+} 
+if (tttAction.symbol == Symbol.NAUGHT){
+	nextState.board[y][x] = Symbol.NAUGHT;
+}
+//System.out.println("Complete applyAction(...) method in TttState.");	//<--Replace this with your code.
 return nextState;													//return new state
 } //end method
 
